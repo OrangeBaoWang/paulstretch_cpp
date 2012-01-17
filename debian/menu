@@ -1,0 +1,5 @@
+?package(paulstretch):\
+  needs="X11" \
+  section="Applications/Sound" \
+  title="paulstretch" \
+  command="/usr/bin/paulstretch"

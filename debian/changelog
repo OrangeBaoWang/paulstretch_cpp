@@ -1,0 +1,5 @@
+paulstretch (2.2.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #594784).
+
+ -- Robin Gareus <robin@gareus.org>  Tue, 17 Jan 2012 17:15:08 +0100

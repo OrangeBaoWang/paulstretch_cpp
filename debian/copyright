@@ -1,0 +1,30 @@
+Format: http://svn.debian.org/wsvn/dep/web/deps/dep5.mdwn?op=file&rev=174
+Upstream-Name: paulstretch_cpp
+Upstream-Contact: Nasca Octavian PAUL <zynaddsubfx@yahoo.com>
+Source: http://hypermammut.sourceforge.net/paulstretch/
+
+Files: *
+Copyright: 2008-2011 Nasca Octavian Paul <zynaddsubfx@yahoo.com>
+License: GPL-2+
+
+Files: debian/*
+Copyright:
+ 2012 Robin Gareus <robin@64studio.com>
+License: GPL-2+
+
+License: GPL-2+
+ This package is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+Comment: You should have received a copy of the GNU General Public License
+ along with this package; if not, write to the Free Software
+ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License can be found in `/usr/share/common-licenses/GPL-2'.

@@ -1,0 +1,2 @@
+version=3
+https://github.com/paulnasca/paulstretch_cpp/tags .*/tarball/(\d[\d\.]+)

@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+LDFLAGS+=-Wl,--as-needed
+DESTDIR=$(CURDIR)/debian/paulstretch
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	# ./compile_linux_fftw.sh with custom LDFLAGS
+	fluid -c GUI.fl 
+	fluid -c FreeEditUI.fl
+	g++  GUI.cxx FreeEditUI.cxx *.cpp Input/*.cpp Output/*.cpp \
+	  -o paulstretch \
+	  $(LDFLAGS) \
+	  `fltk-config --cflags` `fltk-config --ldflags` \
+	  -DHAVE_JACK -DENABLE_RESAMPLING \
+	  `pkg-config --cflags --libs jack samplerate` \
+	  `pkg-config --cflags --libs fftw3f vorbisenc vorbisfile mad mxml audiofile` \
+	  -lportaudio -lpthread -lz
+	mkdir -p $(DESTDIR)/usr/bin/ 
+	cp -a paulstretch $(DESTDIR)/usr/bin/
+
+override_dh_installchangelogs:
+	dh_installchangelogs readme.txt
