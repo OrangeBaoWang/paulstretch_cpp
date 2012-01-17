@@ -5,7 +5,7 @@ Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alio
 Uploaders: Robin Gareus <robin@gareus.org>
 Build-Depends: debhelper (>= 7.0.50~),
  fluid,
- libfltk1.3-dev,
+ libfltk1.1-dev | libfltk1.3-dev | libfltk-dev,
  libaudiofile-dev,
  libfftw3-dev,
  libvorbis-dev,
